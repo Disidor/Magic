@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MagicBall</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		
+		
+		
+		<div id="body_button">
+    		<div class="button_hola" onclick="show_random_value()"><span>Жмякни</span></div>
+		</div>
+
+		<div id="body_button">
+			<p>Привет, я Магический Шар, и я могу помочь ответить на волнующий тебя вопрос, просто задай его и нажми кнопку!</p>
+		</div>
+
+
+		<script type="text/javascript">
+			function show_random_value() {
+				let randomNumber = Math.floor(Math.random()*7);
+				let eightBall = '';
+
+				switch(randomNumber){
+					case 0:
+						eightBall = "не сегодня";
+						break;
+					case 1:
+						eightBall = "Да";
+						break;
+					case 2:
+						eightBall = "Нет";
+						break;
+					case 3:
+						eightBall = "Нет";
+						break;
+					case 4:
+						eightBall = "Нет";
+						break;
+					case 5:
+						eightBall = "Нет";
+						break;
+					case 6:
+						eightBall = "Нет";
+						break;
+					case 7:
+						eightBall = "Нет";
+						break;
+
+				}
+				alert(eightBall);
+			}
+		</script>
+</body>
+</html>
